@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Numbers</title>
+</head>
+<body>
+    <h1>Hello <span data-th-text="${name}"></span></h1>
+    <h2>Here's the list of numbers</h2>
+    <td><input type="text" name="num"></td>
+    <tr data-th-each="number:${num}">
+        <td><a data-th-href="@{/luckynumber/name/count/}"></a></td>
+        <td><img data-th-src="${number}" width="400" height="500"></td>
+    </tr>
+</body>
+</html>
